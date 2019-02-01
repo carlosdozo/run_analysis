@@ -1,15 +1,12 @@
 # Getting-and-Cleaning-Data
 
-
-#Project
-
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 file <- file.path(getwd(), "Dataset.zip")
 download.file(url, file)
 unzip("Dataset.zip")
 
-#library("data.table")
-#library("dplyr")
+#remember library("data.table")
+#remember library("dplyr")
 
 X_test1 <- read.table("test/X_test.txt")
 Y_test1 <- read.table("test/Y_test.txt")
